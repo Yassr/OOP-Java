@@ -1,0 +1,18 @@
+NegativeDetector by Yassr Shaar, C14328571
+
+before anything, you should place the badwords.txt file in the workspace directory or simply alter the destination in the FileExaminer.java class 
+This line: Scanner BadScanner = new Scanner(new File("badwords.txt"));
+
+The way this program works is that in the FileExaminer class creates 2 scanners and 2.
+The lists will be for badwords and the file that is retrieved from the JFileChooser.
+
+then the CScanner is used to scan through the file using
+a temp variable , followed by an if statement to replace
+any bad words with **** stars.
+
+In GuiController we have the main button for opening the file the file is then passed onto FileExaminer where it is edited then it can be printed through the print censored button.
+You can also add to the badwords list by writing the badword then pressing the add badword button but after you do that you must select the file again and print it to see the results.
+You can also test to see if a username contains badwords.
+
+Link to video
+https://youtu.be/rxZCPUVnbj4

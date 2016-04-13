@@ -1,14 +1,17 @@
 package negitaveDetector;
 
-import java.util.Arrays;
+import java.io.FileNotFoundException;
 
 public class Main {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws FileNotFoundException, NullPointerException
 	{
-		FileScanner r = new FileScanner();
-		
-		
+		//This GuiController Section is to open and run the GuiController
+		GuiController  guiControl =  new GuiController();    
+	    guiControl.showFileChooser(GuiController.file,guiControl);
+	    
+	    guiControl.setVisible(true);
+
 	}
 
 }
